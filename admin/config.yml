@@ -1,6 +1,14 @@
 backend:
   name: git-gateway
   branch: master
+  squash_merges: true
+  commit_messages:
+    create: Create {{collection}} “{{slug}}” by “{{author-login}}”
+    update: Update {{collection}} “{{slug}}” by “{{author-login}}”
+    delete: Delete {{collection}} “{{slug}}” by “{{author-login}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: "{{message}}"
 publish_mode: editorial_workflow
 media_folder: content/media
 collections:
