@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main
+publish_mode: editorial_workflow
+media_folder: content/media
+collections:
+  - name: "stories"
+    label: "Stories"
+    label_singular: "Story"
+    folder: "content/stories"
+    slug: "{{slug}}.{{language}}"
+    create: true
+    fields:
+      - {
+          label: "Language",
+          name: "language",
+          widget: "select",
+          required: true,
+          # prettier-ignore
+          options: [{"label":"Afar (Afar)","value":"aa"},{"label":"Аҧсуа (Abkhazian)","value":"ab"},{"label":"Afrikaans (Afrikaans)","value":"af"},{"label":"Akana (Akan)","value":"ak"},{"label":"አማርኛ (Amharic)","value":"am"},{"label":"Aragonés (Aragonese)","value":"an"},{"label":"العربية (Arabic)","value":"ar"},{"label":"অসমীয়া (Assamese)","value":"as"},{"label":"Авар (Avar)","value":"av"},{"label":"Aymar (Aymara)","value":"ay"},{"label":"Azərbaycanca / آذربايجان (Azerbaijani)","value":"az"},{"label":"Башҡорт (Bashkir)","value":"ba"},{"label":"Беларуская (Belarusian)","value":"be"},{"label":"Български (Bulgarian)","value":"bg"},{"label":"भोजपुरी (Bihari)","value":"bh"},{"label":"Bislama (Bislama)","value":"bi"},{"label":"Bamanankan (Bambara)","value":"bm"},{"label":"বাংলা (Bengali)","value":"bn"},{"label":"བོད་ཡིག / Bod skad (Tibetan)","value":"bo"},{"label":"Brezhoneg (Breton)","value":"br"},{"label":"Bosanski (Bosnian)","value":"bs"},{"label":"Català (Catalan)","value":"ca"},{"label":"Нохчийн (Chechen)","value":"ce"},{"label":"Chamoru (Chamorro)","value":"ch"},{"label":"Corsu (Corsican)","value":"co"},{"label":"Nehiyaw (Cree)","value":"cr"},{"label":"Česky (Czech)","value":"cs"},{"label":"словѣньскъ / slověnĭskŭ (Old Church Slavonic / Old Bulgarian)","value":"cu"},{"label":"Чăваш (Chuvash)","value":"cv"},{"label":"Cymraeg (Welsh)","value":"cy"},{"label":"Dansk (Danish)","value":"da"},{"label":"Deutsch (German)","value":"de"},{"label":"ދިވެހިބަސް (Divehi)","value":"dv"},{"label":"ཇོང་ཁ (Dzongkha)","value":"dz"},{"label":"Ɛʋɛ (Ewe)","value":"ee"},{"label":"Ελληνικά (Greek)","value":"el"},{"label":"English (English)","value":"en"},{"label":"Esperanto (Esperanto)","value":"eo"},{"label":"Español (Spanish)","value":"es"},{"label":"Eesti (Estonian)","value":"et"},{"label":"Euskara (Basque)","value":"eu"},{"label":"فارسی (Persian)","value":"fa"},{"label":"Fulfulde (Peul)","value":"ff"},{"label":"Suomi (Finnish)","value":"fi"},{"label":"Na Vosa Vakaviti (Fijian)","value":"fj"},{"label":"Føroyskt (Faroese)","value":"fo"},{"label":"Français (French)","value":"fr"},{"label":"Frysk (West Frisian)","value":"fy"},{"label":"Gaeilge (Irish)","value":"ga"},{"label":"Gàidhlig (Scottish Gaelic)","value":"gd"},{"label":"Galego (Galician)","value":"gl"},{"label":"Avañe'ẽ (Guarani)","value":"gn"},{"label":"ગુજરાતી (Gujarati)","value":"gu"},{"label":"Gaelg (Manx)","value":"gv"},{"label":"هَوُسَ (Hausa)","value":"ha"},{"label":"עברית (Hebrew)","value":"he"},{"label":"हिन्दी (Hindi)","value":"hi"},{"label":"Hiri Motu (Hiri Motu)","value":"ho"},{"label":"Hrvatski (Croatian)","value":"hr"},{"label":"Krèyol ayisyen (Haitian)","value":"ht"},{"label":"Magyar (Hungarian)","value":"hu"},{"label":"Հայերեն (Armenian)","value":"hy"},{"label":"Otsiherero (Herero)","value":"hz"},{"label":"Interlingua (Interlingua)","value":"ia"},{"label":"Bahasa Indonesia (Indonesian)","value":"id"},{"label":"Interlingue (Interlingue)","value":"ie"},{"label":"Igbo (Igbo)","value":"ig"},{"label":"ꆇꉙ / 四川彝语 (Sichuan Yi)","value":"ii"},{"label":"Iñupiak (Inupiak)","value":"ik"},{"label":"Ido (Ido)","value":"io"},{"label":"Íslenska (Icelandic)","value":"is"},{"label":"Italiano (Italian)","value":"it"},{"label":"ᐃᓄᒃᑎᑐᑦ (Inuktitut)","value":"iu"},{"label":"日本語 (Japanese)","value":"ja"},{"label":"Basa Jawa (Javanese)","value":"jv"},{"label":"ქართული (Georgian)","value":"ka"},{"label":"KiKongo (Kongo)","value":"kg"},{"label":"Gĩkũyũ (Kikuyu)","value":"ki"},{"label":"Kuanyama (Kuanyama)","value":"kj"},{"label":"Қазақша (Kazakh)","value":"kk"},{"label":"Kalaallisut (Greenlandic)","value":"kl"},{"label":"ភាសាខ្មែរ (Cambodian)","value":"km"},{"label":"ಕನ್ನಡ (Kannada)","value":"kn"},{"label":"한국어 (Korean)","value":"ko"},{"label":"Kanuri (Kanuri)","value":"kr"},{"label":"कश्मीरी / كشميري (Kashmiri)","value":"ks"},{"label":"Kurdî / كوردی (Kurdish)","value":"ku"},{"label":"Коми (Komi)","value":"kv"},{"label":"Kernewek (Cornish)","value":"kw"},{"label":"Kırgızca / Кыргызча (Kirghiz)","value":"ky"},{"label":"Latina (Latin)","value":"la"},{"label":"Lëtzebuergesch (Luxembourgish)","value":"lb"},{"label":"Luganda (Ganda)","value":"lg"},{"label":"Limburgs (Limburgian)","value":"li"},{"label":"Lingála (Lingala)","value":"ln"},{"label":"ລາວ / Pha xa lao (Laotian)","value":"lo"},{"label":"Lietuvių (Lithuanian)","value":"lt"},{"label":"Tshiluba (Luba-Katanga)","value":"lu"},{"label":"Latviešu (Latvian)","value":"lv"},{"label":"Malagasy (Malagasy)","value":"mg"},{"label":"Kajin Majel / Ebon (Marshallese)","value":"mh"},{"label":"Māori (Maori)","value":"mi"},{"label":"Македонски (Macedonian)","value":"mk"},{"label":"മലയാളം (Malayalam)","value":"ml"},{"label":"Монгол (Mongolian)","value":"mn"},{"label":"Moldovenească (Moldovan)","value":"mo"},{"label":"मराठी (Marathi)","value":"mr"},{"label":"Bahasa Melayu (Malay)","value":"ms"},{"label":"bil-Malti (Maltese)","value":"mt"},{"label":"မြန်မာစာ (Burmese)","value":"my"},{"label":"Dorerin Naoero (Nauruan)","value":"na"},{"label":"Norsk bokmål (Norwegian Bokmål)","value":"nb"},{"label":"Sindebele (North Ndebele)","value":"nd"},{"label":"नेपाली (Nepali)","value":"ne"},{"label":"Oshiwambo (Ndonga)","value":"ng"},{"label":"Nederlands (Dutch)","value":"nl"},{"label":"Norsk nynorsk (Norwegian Nynorsk)","value":"nn"},{"label":"Norsk (Norwegian)","value":"no"},{"label":"isiNdebele (South Ndebele)","value":"nr"},{"label":"Diné bizaad (Navajo)","value":"nv"},{"label":"Chi-Chewa (Chichewa)","value":"ny"},{"label":"Occitan (Occitan)","value":"oc"},{"label":"ᐊᓂᔑᓈᐯᒧᐎᓐ / Anishinaabemowin (Ojibwa)","value":"oj"},{"label":"Oromoo (Oromo)","value":"om"},{"label":"ଓଡ଼ିଆ (Oriya)","value":"or"},{"label":"Иронау (Ossetian / Ossetic)","value":"os"},{"label":"ਪੰਜਾਬੀ / पंजाबी / پنجابي (Panjabi / Punjabi)","value":"pa"},{"label":"Pāli / पाऴि (Pali)","value":"pi"},{"label":"Polski (Polish)","value":"pl"},{"label":"پښتو (Pashto)","value":"ps"},{"label":"Português (Portuguese)","value":"pt"},{"label":"Runa Simi (Quechua)","value":"qu"},{"label":"Rumantsch (Raeto Romance)","value":"rm"},{"label":"Kirundi (Kirundi)","value":"rn"},{"label":"Română (Romanian)","value":"ro"},{"label":"Русский (Russian)","value":"ru"},{"label":"Kinyarwandi (Rwandi)","value":"rw"},{"label":"संस्कृतम् (Sanskrit)","value":"sa"},{"label":"Sardu (Sardinian)","value":"sc"},{"label":"सिनधि (Sindhi)","value":"sd"},{"label":"Sámegiella (Northern Sami)","value":"se"},{"label":"Sängö (Sango)","value":"sg"},{"label":"Srpskohrvatski / Српскохрватски (Serbo-Croatian)","value":"sh"},{"label":"සිංහල (Sinhalese)","value":"si"},{"label":"Slovenčina (Slovak)","value":"sk"},{"label":"Slovenščina (Slovenian)","value":"sl"},{"label":"Gagana Samoa (Samoan)","value":"sm"},{"label":"chiShona (Shona)","value":"sn"},{"label":"Soomaaliga (Somalia)","value":"so"},{"label":"Shqip (Albanian)","value":"sq"},{"label":"Српски (Serbian)","value":"sr"},{"label":"SiSwati (Swati)","value":"ss"},{"label":"Sesotho (Southern Sotho)","value":"st"},{"label":"Basa Sunda (Sundanese)","value":"su"},{"label":"Svenska (Swedish)","value":"sv"},{"label":"Kiswahili (Swahili)","value":"sw"},{"label":"தமிழ் (Tamil)","value":"ta"},{"label":"తెలుగు (Telugu)","value":"te"},{"label":"Тоҷикӣ (Tajik)","value":"tg"},{"label":"ไทย / Phasa Thai (Thai)","value":"th"},{"label":"ትግርኛ (Tigrinya)","value":"ti"},{"label":"Туркмен / تركمن (Turkmen)","value":"tk"},{"label":"Tagalog (Tagalog / Filipino)","value":"tl"},{"label":"Setswana (Tswana)","value":"tn"},{"label":"Lea Faka-Tonga (Tonga)","value":"to"},{"label":"Türkçe (Turkish)","value":"tr"},{"label":"Xitsonga (Tsonga)","value":"ts"},{"label":"Tatarça (Tatar)","value":"tt"},{"label":"Twi (Twi)","value":"tw"},{"label":"Reo Mā`ohi (Tahitian)","value":"ty"},{"label":"Uyƣurqə / ئۇيغۇرچە (Uyghur)","value":"ug"},{"label":"Українська (Ukrainian)","value":"uk"},{"label":"اردو (Urdu)","value":"ur"},{"label":"Ўзбек (Uzbek)","value":"uz"},{"label":"Tshivenḓa (Venda)","value":"ve"},{"label":"Tiếng Việt (Vietnamese)","value":"vi"},{"label":"Volapük (Volapük)","value":"vo"},{"label":"Walon (Walloon)","value":"wa"},{"label":"Wollof (Wolof)","value":"wo"},{"label":"isiXhosa (Xhosa)","value":"xh"},{"label":"ייִדיש (Yiddish)","value":"yi"},{"label":"Yorùbá (Yoruba)","value":"yo"},{"label":"Cuengh / Tôô / 壮语 (Zhuang)","value":"za"},{"label":"中文 (Chinese)","value":"zh"},{"label":"isiZulu (Zulu)","value":"zu"}],
+        }
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - {
+          label: "Difficulty",
+          name: "difficulty",
+          widget: "select",
+          required: false,
+          "options":
+            [
+              { label: "Abosolute Beginner", value: "absolute-beginner" },
+              { label: "Beginner", value: "beginner" },
+              { label: "Intermediate", value: "intermediate" },
+              { label: "Advanced", value: "advanced" },
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
+      - {
+          label: "Cover Image",
+          name: "cover",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Short Summary",
+          name: "excerpt",
+          widget: "text",
+          required: false,
+        }
+      - { label: "Audio", name: "audio", widget: "file", required: false }
+      - {
+          label: "Collection Id",
+          name: "collection",
+          hint: "Stories with the same collection id will be presented together. If you dont know what this is then dont change this value.",
+          widget: "string",
+          required: false,
+        }

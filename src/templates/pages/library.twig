@@ -1,0 +1,17 @@
+{% extends 'layouts/basic.twig' %}
+
+{% block content %}
+  <section>
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col">
+          <ul>
+            {% for story in stories %}
+              <li>{{ story[0].title }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

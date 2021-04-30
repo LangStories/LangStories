@@ -1,0 +1,35 @@
+{
+  "name": "langstories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "server": "http-server ./build",
+    "styles:build": "node-sass src/styles/main.scss assets/compiled.css",
+    "styles:watch": "npm run styles:build -- --watch",
+    "dev:build": "npm run styles:build && npm run build",
+    "dev:watch": "nodemon --watch src -e js,scss,twig --exec \"npm run dev:build\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LangStories/langstories.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LangStories/langstories/issues"
+  },
+  "homepage": "https://github.com/LangStories/langstories#readme",
+  "dependencies": {
+    "fs-extra": "^9.1.0",
+    "parse-md": "^2.0.4",
+    "twing": "^5.0.2"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.6.0",
+    "node-sass": "^5.0.0",
+    "prettier-plugin-twig-melody": "^0.4.6"
+  }
+}
